@@ -33,6 +33,3 @@ while (true)
     output.Close();
 }
 
-Console.WriteLine("Hello, World!");
-
-
