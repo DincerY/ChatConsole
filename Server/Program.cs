@@ -18,7 +18,7 @@ while (true)
 
     if (request.HasEntityBody)
     {
-        System.IO.Stream body = request.InputStream;
+        Stream body = request.InputStream;
         StreamReader reader = new StreamReader(body);
         text = reader.ReadToEnd();
         Console.WriteLine($"Request body : {text}");
@@ -28,7 +28,7 @@ while (true)
     byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
 
     response.ContentLength64 = buffer.Length;
-    System.IO.Stream output = response.OutputStream;
+    Stream output = response.OutputStream;
     output.Write(buffer, 0, buffer.Length);
     output.Close();
 }
