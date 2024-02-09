@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{FF1149C3-FA0B-4555-B8CE-96FB41F1B5C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{FF1149C3-FA0B-4555-B8CE-96FB41F1B5C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{6D1B9D2A-6EE5-4260-B47C-813B2F342376}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{6D1B9D2A-6EE5-4260-B47C-813B2F342376}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQChat", "RabbitMQChat", "{05C6D252-78A4-43F6-9E54-850ECA1D50ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "RabbitMQChat\Client\Client.csproj", "{84E3728A-F6E8-47CA-97E0-6A43B4163878}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "RabbitMQChat\Server\Server.csproj", "{5BFA9209-B2F1-4594-BA0E-A8926D03C4E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,21 @@ Global
 		{6D1B9D2A-6EE5-4260-B47C-813B2F342376}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D1B9D2A-6EE5-4260-B47C-813B2F342376}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D1B9D2A-6EE5-4260-B47C-813B2F342376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E3728A-F6E8-47CA-97E0-6A43B4163878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E3728A-F6E8-47CA-97E0-6A43B4163878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E3728A-F6E8-47CA-97E0-6A43B4163878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E3728A-F6E8-47CA-97E0-6A43B4163878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BFA9209-B2F1-4594-BA0E-A8926D03C4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BFA9209-B2F1-4594-BA0E-A8926D03C4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BFA9209-B2F1-4594-BA0E-A8926D03C4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BFA9209-B2F1-4594-BA0E-A8926D03C4E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84E3728A-F6E8-47CA-97E0-6A43B4163878} = {05C6D252-78A4-43F6-9E54-850ECA1D50ED}
+		{5BFA9209-B2F1-4594-BA0E-A8926D03C4E7} = {05C6D252-78A4-43F6-9E54-850ECA1D50ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60C80CB9-EF88-4A99-A729-7A092F7AF9B2}
